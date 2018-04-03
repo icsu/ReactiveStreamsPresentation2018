@@ -12,7 +12,7 @@ public class PublishingAndConsumingSubscriber<T> implements Flow.Subscriber<T>
     @Override
     public void onSubscribe(Flow.Subscription subscription) {
         this.subscription = subscription;
-        subscription.request(1);
+        //subscription.request(1);
     }
 
     @Override
