@@ -13,7 +13,6 @@ public class PublishProcessorBufferSample
                 .buffer(1024)
                 .observeOn(Schedulers.computation())
                 .subscribe(list -> {
-                    list.parallelStream().map(e -> e * e);
                     System.out.println(list.size());
                 }, Throwable::printStackTrace);
 

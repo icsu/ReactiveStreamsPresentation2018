@@ -12,7 +12,6 @@ public class SimpleListObservable
     {
         List<String> words = Arrays.asList("Ana", "are", "mere");
 
-        //Observable.fro
         Observable.fromIterable(words).subscribe(System.out::println);
     }
 

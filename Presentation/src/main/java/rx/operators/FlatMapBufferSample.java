@@ -12,6 +12,5 @@ public class FlatMapBufferSample
                      Flowable.just(list.stream().mapToInt(i -> i.intValue()).sum()))
                 .toList()
                 .subscribe(System.out::println);
-
     }
 }

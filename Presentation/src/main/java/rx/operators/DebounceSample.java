@@ -35,8 +35,8 @@ public class DebounceSample
 
         Observable.fromArray(intervals)
                 .flatMap(interval -> Observable.just(interval.index)
-                .delay(interval.time, TimeUnit.MILLISECONDS))
-                .debounce(500, TimeUnit.MILLISECONDS)
+                .delay(interval.time/100, TimeUnit.MILLISECONDS))
+                .debounce(100, TimeUnit.MILLISECONDS)
                 .subscribe(System.out::println);
 
     }
